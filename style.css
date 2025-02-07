@@ -1,4 +1,4 @@
-*{
+/* *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -20,6 +20,8 @@
     border-radius: 10px;
 }
 
+
+.product-image
 .sale-badge {
     position: absolute;
     top: 10px;
@@ -37,6 +39,7 @@
     right: 10px;
     display: flex;
     flex-direction: column;
+    display: none;
 }
 
 .wishlist-share button {
@@ -51,6 +54,12 @@
 .product-title {
     font-weight: bold;
     margin-top: 10px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.product-title:hover {
+    color: green;
 }
 
 .price {
@@ -66,4 +75,28 @@
 .stock {
     color: green;
     font-size: 14px;
+} */
+
+.collection-item {
+    text-align: center;
+    padding: 10px;
+}
+
+.collection-item img {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.slider-container {
+    padding: 20px;
+}
+
+.slick-prev,
+.slick-next {
+    background-color: #000;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
 }
