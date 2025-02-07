@@ -80,6 +80,9 @@
 .collection-item {
     text-align: center;
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .collection-item img {
@@ -93,10 +96,23 @@
     padding: 20px;
 }
 
-.slick-prev,
-.slick-next {
-    background-color: #000;
+.slick-prev, .slick-next {
+    /* background-color: #000;
     border-radius: 50%;
     width: 40px;
     height: 40px;
+    z-index: 1000; */
+    visibility: hidden;
 }
+/* .slick-prev::before, .slick-next::before {
+    font-size: 20px;
+    color: white;
+}
+.slick-prev {
+    left: 0px;
+    top: -40px;
+}
+.slick-next { */
+    /* right: 0px;
+    top: -40px;
+} */
